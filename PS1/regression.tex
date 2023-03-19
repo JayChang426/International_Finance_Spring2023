@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{authblk}
+\usepackage[margin=2cm]{geometry}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{booktabs}
+\usepackage{bookmark}
+\usepackage{longtable}
+\usepackage{rotfloat}
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{url}
+\usepackage{mathtools}
+\usepackage{amssymb,amsmath,amsthm,amsfonts} 
+\usepackage[no-math]{fontspec} 
+\usepackage{mathspec}
+\usepackage{xunicode} 
+\usepackage{xltxtra} 
+\defaultfontfeatures{Scale=1.0, Mapping=tex-text}
+\newcommand*{\QEDA}{\null\nobreak\hfill\ensuremath{\square}}%
+\usepackage{tikz}
+% \usepackage[hidelinks]{hyperref}
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{caption}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{multirow}
+
+\setmainfont{Minion Pro}
+\setmathfont{Minion Pro}
+\setCJKmainfont{宋體-繁}
+\renewcommand{\baselinestretch}{1.35}
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
+% \setlength{\droptitle}{5cm}
+% \pagenumbering{gobble} %This eliminate page numbers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{B09704016, 經濟三張茗傑}
+\fancyhead[RE,LO]{Labor Economics (I) PS1}
+\rfoot{\thepage}
+
+\setlength{\headheight}{13pt}
+\geometry{a4paper,left=1.75cm,right=1.75cm,top=2.75cm,bottom=2cm}
+\begin{document}
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{reg\_1960}&\multicolumn{1}{c}{reg\_1980}&\multicolumn{1}{c}{reg\_2000}&\multicolumn{1}{c}{reg\_2019}\\
+\hline
+variable\_INV&       1.140\sym{***}&       0.604\sym{*}  &       0.692\sym{*}  &       0.956\sym{***}\\
+            &     (0.195)         &     (0.259)         &     (0.286)         &     (0.103)         \\
+[1em]
+\_cons      &      -1.243         &       10.29         &       10.66         &       4.305         \\
+            &     (4.489)         &     (7.363)         &     (6.775)         &     (3.122)         \\
+\hline
+\(N\)       &          19         &          41         &          47         &          47         \\
+adj. \(R^{2}\)&       0.550         &       0.094         &       0.098         &       0.378         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}
+\end{document}
